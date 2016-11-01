@@ -1,0 +1,38 @@
+
+$font-family-oswald: 'Oswald', sans-serif;
+$font-family-opensans: 'Open Sans', sans-serif;
+
+
+// Overrides
+$grid-gutter-width: 40px !default; 
+$border-radius-base:  4px !default;
+$padding-base-vertical: 14px !default;
+
+$brand-primary: #FA5555 !default;
+$brand-secondary: #4e4d4d !default; 
+$brand-tertiary: #abaaaa !default; 
+
+
+
+$brand-white: #fff;
+$brand-black: #000;
+$brand-darker: #333;
+$brand-gray: #ccc;
+$brand-lighter: #e9e9e9;
+$brand-body-color: #f2f2f2;
+$brand-selection-color: #f9f6f0;
+$brand-overlay-color: #3b3d40;
+$brand-bg-footer: #41444B;
+$brand-bg-color: $brand-white;
+
+$input-border-focus:  $brand-primary !default;
+$form-group-margin-bottom:       30px !default;
+
+$font-size-root: 14px !default;
+$font-size-small: 12px !default;
+$font-size-large: 18px !default;
+$font-size-medium: 16px !default; 
+
+$line-height-computed: 20px;
+$line-height-computed-small : $line-height-computed / 2;
+

@@ -1,0 +1,92 @@
+@mixin transition($transition) {
+    -moz-transition:    $transition ease;
+    -o-transition:      $transition ease;
+    -webkit-transition: $transition ease;
+    -ms-transition: 		$transition ease;
+    transition:         $transition ease;
+}
+.page {
+	font-family: $font-family-opensans;
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 24px;
+	letter-spacing: 0.01em;
+	background: $brand-white;
+	color:$brand-black
+}
+h1,h3,h4,h5,h6 {
+	color: #333;
+	font-weight: 400;
+	font-family: $font-family-oswald;
+	margin: 0 0 30px 0;
+}
+ul {
+	padding: 0;
+	list-style: none;
+	margin:0;
+	li {
+		display: inline-block;
+		text-transform: uppercase;
+	}
+}
+#fh5co-header {	
+	padding: 10px;
+	overflow:hidden;
+	a {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-family: $font-family-oswald;
+		color: #000;
+		letter-spacing: 0.1em;
+		&:hover {
+			background:none;
+		}
+	}
+	.navbar-nav {
+		li a{
+			@include transition(.3s);
+			&::after {
+				content: "";
+				height: 3px;
+				width: 0;
+				background: #000;
+				display: block;
+				
+			}
+			&:hover::after {
+				width: inherit;
+			}
+					
+			
+		}
+	}
+	.col-left,.col-right {
+		padding: 15px 30px 0 40px;
+	}
+	.icon,.menu-2 {
+		float: left;
+	}
+	.icon-social {
+		margin-top: 10px;
+	}
+	.icon-social,.menu-1 {
+		float: right;
+	}
+	.row-header {
+		padding: 10px;
+	}
+	.icon {
+		padding: 15px 0;
+	
+		i {
+			font-size: 14px;
+			padding: 10px
+		}
+	}		
+	.col-middle {
+		.home-logo {
+			height: 70px;
+		}
+		
+	}
+}
