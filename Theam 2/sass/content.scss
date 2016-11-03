@@ -4,22 +4,77 @@
     overflow: hidden;
     z-index: 9;
 
-    .login,.text-content  {
-		float: left;
-		width: 32.333333%;
-		margin-right: 15px;
+    .login,.text-content  {				
 		background: #e6e6e6;
 		font-size: 14px;
 		color: #000;
-		z-index: 99;
-		padding-right: 20px;
+		z-index: 99;		
     }
-    .text-content + .login {
-    	margin: 0;
+    .text-center {
+    	padding: 10px;    	
+    	@media (min-width: $screen-xs) and (max-width: $screen-xs-max) {
+    		.navbar-form {
+    			float: none;
+    		}
+    		.btn-danger {
+    			width: 50%;
+    		}
+    		.form-control {
+    			margin:auto;
+    			width: 50%;
+    		}
+    	}
+    	@media (min-width: $screen-xs-max) and (max-width: $screen-sm-max) {
+			.navbar-form {
+				float: none!important
+
+			}
+    	}
+    	
     }
-    .form-group + .form-group {
-    	margin-left: 10px;
+    &:nth-last-child + .text-center {
+    		margin-bottom: 10px;
+    	}
+    .form-group {
+    	input {
+    		max-width: 95%;
+    		height: 30px;
+    		padding: 0 5px;
+    		border: none;
+    		border-radius: 0;
+    	}   	
     }
+    button {
+    		padding: 5px 9px;
+    		border:none;
+    		border-radius: 0;
+    		font-weight: 700;
+    		&:hover {
+    			background: #fff;
+    		}
+    	}
+   
+    .login {
+    		p {
+    			padding-left: 10px;
+    			font-size: 9px;
+    	    	font-style: italic;
+    	    	text-align: left;
+    	    	font-weight: 600;
+    	    	letter-spacing: 1px;
+    	    	text-transform: capitalize;
+    	    	float: left;
+    		}
+    		@media (min-width: $screen-xs) and (max-width: $screen-sm-max) {
+    			p {
+    				float: none;
+    				margin-bottom:0;
+    				text-align: center!important;
+    				
+    			}
+    		}
+    		
+    	}
     .text {
     	margin-bottom: 70px;
     	h2 {
@@ -32,11 +87,6 @@
     		letter-spacing: 1px;
     	}
     }
-    .two-buttons {
-		clear: both;
-		margin-bottom: 30px;
-    }
-    
     h2 {
     	font-family: $font-family-oswald;
     	color: #000;
@@ -50,43 +100,29 @@
     	font-size: 24px;
     	text-transform: uppercase;
     } 
-    .form-control {
-    	height: 30px;
-	    padding: 10px 0 10px 3px;
-	    font-size: 14px;
-	    border-radius: 0;
-	    border: none;
-	    box-shadow: none;
-	}
-
-    .btn-default {
-    	padding: 4px 10px;
-    	font-weight: bold;
-    	border-radius:0; 
-    	margin-left: 5px;
-    	border: none;
-	    box-shadow: none;
-    }
     .btn-danger {
     	font-size: 14px;
-	    background: #fff;
-	    color: #000;
-	    border: 2px solid #000;
-	    text-transform: capitalize;
-	    margin-bottom: 15px;
-	    font-weight: 600;
-	    border-radius:0;
-	    width: 50%;
-	    position: relative;
-	    @include transition(.3s);
-
-	    &:hover {
-	    		background: #4e4d4d;
-	    		color: #fff;
-	    		border-color: #fff;
-	    }
-
-	}
+    	    background: #fff;
+    	    color: #000;
+    	    border: 2px solid #000;
+    	    text-transform: capitalize;
+    	    margin-bottom: 15px;
+    	    font-weight: 600;
+    	    border-radius:0;
+    	    width: 50%;
+    	    position: relative;
+    	    @include transition(.3s);
+    
+    	    &:hover {
+    	    		background: #4e4d4d;
+    	    		color: #fff;
+    	    		border-color: #fff;
+    	    }
+    	@media (max-width: $screen-xs) {
+    		 width: 80%;
+    	 }
+    
+    }
 	.btn-danger + .btn-danger {
 		font-size: 10px;
 		padding: 5px 20px;
@@ -116,66 +152,40 @@
 	    	letter-spacing: 1px;
 		}
 	}
-	
-	@media(max-width:1200px) {
-		.login,.text-content {
-			width: 31.3333333%;
-			margin-left: 0px;
-		    padding-left: 20px;
-		    .form-group {
-				margin-left: 0;
-				margin-bottom: 10px;
-			}
-			.btn-default {
-				width: 30%;
-			}
-		}
-		.btn {
-			width: 80%;
-		}
-	}
-	@media(max-width:768px) {
-		.login,.text-content {
-			width: 31.333333%;
-			margin-left: 0px;
-		    padding-left: 10px;
-		    .form-group {
-				margin-left: 0;
-			}
-			.btn-default {
-				width: 30%;
-
-			}
-		
-		}
-		.btn {
-			width: 90%;
-		}
-	}
-	@media(max-width:553px) {
-		.login,.text-content {
-			width: 100%;
-			margin-bottom: 10px;					    			
-		}		
-	}
+    
 }
+footer {
+	background:#333333;
+	color: #babbbb;
+	text-transform: uppercase;
+	.pull-left p{
+		padding: 15px;
+	}
+	.pull-right a{
+		color: #babbbb;
+	}
+	@media (max-width: $screen-xs) {
+    	.pull-right,.pull-left {
+    		text-align: center;
+    		width: 100%;
+			
+			a,p{
+				padding: 0;
+			}
+    	}
+    }
+
+}
+
 #list-avatar {
 	padding: 20px 40px;
-
-	.small-picture {
-		.responsive-picture {
-			display: none;
+	@media (min-width: $screen-xs) and (max-width: $screen-xs-max) {
+		.responsive-picture {	
+			margin: auto;		
 		}
-		@media(max-width:553px) {
-			.responsive-picture {
-			display: block;			
-			}
-			> img {
-				display: none;
-			}
-		}
-
+	
 	}
+	
 	.navbar-nav li{
 		float: none;
 		a {
@@ -189,7 +199,7 @@
 		border: 1px solid #fff;
 		border-radius: 50%;
 		background: #ccc;
-		@media(max-width:553px) {
+		@media (max-width: $screen-xs) {
 			margin: auto;
 			margin-bottom: 20px;
 			width: 200px;

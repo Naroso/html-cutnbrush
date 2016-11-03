@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Wizteam</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/wizteam.css">
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="home page">
+	<header role="banner" id="fh5co-header">
+		<div class="home-picture"><img class="img-responsive" src="images/home-picture.png" alt="">
+		</div>		
+
+		<div class="row row-header">
+			<div class="col-md-5 col-left">
+			
+				<div class="icon">
+					<ul>
+						<li><i class="fa fa-user"></i></li>
+						<li><i class="fa fa-search"></i></li>
+					</ul>
+			
+				</div>
+				
+				<div class="fluid-container">
+					<nav class="navbar menu-1">
+						<div class="navbar-collapse collapse">
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="#">accueill</a></li>
+								<li><a href="#">nos services</a></li>
+								<li><a href="#">FAQ</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+			
+			<div class="col-md-2 col-middle">
+				<div class="home-logo"><img src="images/home-logo.png" alt=""></div>
+			</div>
+			
+			<div class="col-md-5 col-right" >
+				<div class="fluid-container">
+					<nav class="navbar menu-2">
+						<div class="navbar-collapse collapse">
+							<ul class="nav navbar-nav navbar-left ">
+								<li><a href="#">accueill</a></li>
+								<li><a href="#">nos services</a></li>
+								<li><a href="#">FAQ</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+				<div class="icon-social">
+					<ul>
+						<li> <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social"></i></a></li>
+						<li> <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-3x social"></i></a></li>
+						<li><a href="https://plus.google.com/+Bootsnipp-page"><i class="fa fa-google-plus-square fa-3x social"></i></a></li>
+						<li> <a href="mailto:bootsnipp@gmail.com"><i class="fa fa-envelope-square fa-3x social"></i></a></li>
+					</ul>
+				</div>
+			
+			</div>
+				
+		</div>
+			
+				
+	</header>
+
+	<section id="register">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="login text-center">
+						<h2>vous etes <span>coiffeu</span></h2>
+						<form class="navbar-form navbar-right" role="search">
+		                    <div class="form-group">
+		                        <input type="text" class="form-control" name="username" placeholder="utilisateur">
+		                    </div>
+		                    <div class="form-group">
+		                        <input type="text" class="form-control" name="password" placeholder="mot de passe">
+		                    </div>
+		                    <button type="submit" class="btn btn-default">GO</button>
+		                    <p>untillsateur,not depasseauble</p>
+		                </form>
+		                
+		                 <div class="two-buttons" data-toggle="buttons">
+				            </label>
+				            <label class="btn btn-lg btn-danger">
+				                <input type="radio" name="options" id="option2" autocomplete="off">
+				                 demande d'incrition
+				            </label> 
+				            <label class="btn btn-lg btn-danger">
+		                		<input type="radio" name="options" id="option2" autocomplete="off">
+		                		<i class="fa fa-facebook"></i> inscrivez-vousa <br>vec facebook
+		           			 </label>           
+				        </div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="text-content text-center">
+						<h2>no services</h2>
+
+						<div class="text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quisquam, soluta sunt, aliquam voluptatem voluptates! Deserunt repudiandae aperiam pariatur sit harum at a, quo, est neque. Adipisci beatae eaque unde?</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium perspiciatis nobis, in enim sit alias maiores veniam iusto a quibusdam ex eos cum labore culpa architecto pariatur. Incidunt sunt, odio.</p>
+						</div>				
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="login text-center">
+						<h2>vous etes <span>coiffeu</span></h2>
+						<form class="navbar-form navbar-right" role="search">
+		                    <div class="form-group">
+		                        <input type="text" class="form-control" name="username" placeholder="utilisateur">
+		                    </div>
+		                    <div class="form-group">
+		                        <input type="text" class="form-control" name="password" placeholder="mot de passe">
+		                    </div>
+		                    <button type="submit" class="btn btn-default">GO</button>
+		                    <p>untillsateur,not depasseauble</p>
+		                </form>
+		                <div class="two-buttons" data-toggle="buttons">
+				            <label class="btn btn-lg btn-danger">
+				                <input type="radio" name="options" id="option2" autocomplete="off">
+				                 demande d'incrition
+				            </label> 
+				            <label class="btn btn-lg btn-danger">
+		                		<input type="radio" name="options" id="option2" autocomplete="off">
+		                		<i class="fa fa-facebook"></i> inscrivez-vous <br>avec facebookx
+		           			</label>           
+		        		</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</section>
+
+	<section>
+		<div id="map" style="width:100%;height:500px"></div>
+
+			<script>
+			function myMap() {
+			  var mapCanvas = document.getElementById("map");
+			  var mapOptions = {
+			    center: new google.maps.LatLng(51.5, -0.2), 
+			    zoom: 10
+			  }
+			  var map = new google.maps.Map(mapCanvas, mapOptions);
+			}
+			</script>
+
+			<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+	</section>
+
+	<section id="list-avatar">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-3" align="center">
+				<div class="small-picture">
+				 	<img src="images/small-picture.png" alt="">
+				 	<img class="responsive-picture" src="images/home-logo.png" alt="">
+				</div>
+				<div>
+					<nav class="navbar">
+						<div class="navbar-collapse collapse">
+							<ul class="nav navbar-nav">
+								<li><a href="#">trouver un coiffeur</a></li>
+								<li><a href="#">faq</a></li>
+								<li><a href="#">service clientle</a></li>
+								<li><a href="#">nous contacter</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+			<div class="col-md-9 col-right">
+				<div class="row">
+					<div class="col-md-3 col-left">
+						<div class="cricle-avatar"></div>
+					</div>
+					<div class="col-md-3 col-left">
+						<div class="cricle-avatar"></div>
+					</div>
+					<div class="col-md-3 col-left">
+						<div class="cricle-avatar"></div>
+					</div>
+					<div class="col-md-3 col-left"  >
+						<div class="cricle-avatar"></div>
+					</div>
+				</div>
+			</div>		
+		
+	</section>
+	
+	<footer>
+		<div align="col-left">
+			<p>cut brush 2014</p>
+		</div>
+		<div align="navbar-right">
+			<ul >
+				<li><a href="#">condition Generales</a></li>
+				<li><a href="#">plan du site</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>

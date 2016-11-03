@@ -1,0 +1,70 @@
+#register-page h2, #register-page h3, #register-page h4, #register-page h5, #register-page h6 {
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 0,01em;
+  margin: 0;
+  padding: 0; }
+#register-page h2 {
+  text-transform: capitalize;
+  font-size: 18px; }
+  #register-page h2 span {
+    text-transform: uppercase;
+    font-size: 24px; }
+#register-page th {
+  text-transform: uppercase;
+  line-height: 40px; }
+#register-page table {
+  margin-top: 40px; }
+#register-page td + td .form-control, #register-page td + td select {
+  margin-left: 10px; }
+#register-page select {
+  width: 100%;
+  padding: 10px; }
+#register-page textarea {
+  padding: 10px;
+  width: 100%; }
+#register-page .entry-row {
+  padding-top: 30px; }
+#register-page .form-control, #register-page select, #register-page textarea {
+  border: none;
+  border-radius: 0;
+  margin-bottom: 10px; }
+#register-page .btn {
+  background: #fff;
+  border-radius: 0;
+  border: 2px solid #000;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  font-weight: 600; }
+#register-page .large-text {
+  padding: 20px 60px; }
+#register-page .checkbox {
+  clear: both;
+  width: 860px;
+  margin: auto; }
+#register-page .check {
+  float: left; }
+  #register-page .check label {
+    line-height: 22px;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    width: 70%;
+    position: relative; }
+    #register-page .check label input {
+      display: none; }
+    #register-page .check label::before {
+      content: "";
+      width: 15px;
+      height: 15px;
+      background: #fff;
+      border: 1px solid #b6b6b6;
+      display: block;
+      position: absolute;
+      bottom: 35%;
+      left: -5%;
+      transform: translateY(-35%); }
+
+/*# sourceMappingURL=register.css.map */

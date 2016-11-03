@@ -1,0 +1,66 @@
+#profile .col-middle {
+  margin-top: 50px; }
+#profile .navbar {
+  margin-bottom: -15px; }
+#profile .entry-row {
+  max-width: 900px;
+  margin: auto; }
+#profile .nav-tabs-primary {
+  margin-bottom: 15px;
+  margin-top: 10px; }
+  #profile .nav-tabs-primary li {
+    display: inline-block;
+    margin-bottom: -1px;
+    margin-right: 4px;
+    line-height: 1.42857143; }
+    #profile .nav-tabs-primary li a {
+      background: #e6e6e6;
+      letter-spacing: 0.01em;
+      line-height: auto;
+      border-radius: 10px 10px 0 0;
+      padding: 5px 30px;
+      border: 1px solid #dddcdc; }
+      @media (max-width: 543px) {
+        #profile .nav-tabs-primary li a {
+          padding: 2px 4px; } }
+      @media (max-width: 767px) {
+        #profile .nav-tabs-primary li a {
+          font-size: 10px;
+          padding: 5px 4px; } }
+#profile .nav-tabs-primary > li.active > a,
+#profile .nav-tabs-primary > li.active > a:hover,
+#profile .nav-tabs-primary > li.active > a:focus {
+  color: #000;
+  cursor: default;
+  background-color: #c7c7c7;
+  padding: 15px 30px 5px 30px; }
+  @media (max-width: 544px) {
+    #profile .nav-tabs-primary > li.active > a,
+    #profile .nav-tabs-primary > li.active > a:hover,
+    #profile .nav-tabs-primary > li.active > a:focus {
+      padding: 10px 5px 2px 5px; } }
+  @media (max-width: 767px) {
+    #profile .nav-tabs-primary > li.active > a,
+    #profile .nav-tabs-primary > li.active > a:hover,
+    #profile .nav-tabs-primary > li.active > a:focus {
+      padding: 10px 5px 5px 5px; } }
+#profile .nav-tabs-primary.nav-justified {
+  width: 100%;
+  border-bottom: 0; }
+  #profile .nav-tabs-primary.nav-justified li {
+    float: none; }
+    #profile .nav-tabs-primary.nav-justified li > a {
+      margin-bottom: 5px;
+      text-align: center; }
+#profile .profile {
+  background: #e6e6e6;
+  border: 1px solid #dedddd;
+  padding-top: 15px;
+  padding-bottom: 38px; }
+  #profile .profile .table td {
+    border: none;
+    text-transform: capitalize; }
+    #profile .profile .table td span {
+      font-weight: bold; }
+
+/*# sourceMappingURL=profile.css.map */

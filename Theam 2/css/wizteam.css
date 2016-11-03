@@ -15,75 +15,179 @@ h1, h3, h4, h5, h6 {
   font-family: "Oswald", sans-serif;
   margin: 0 0 30px 0; }
 
-ul {
-  padding: 0;
-  list-style: none;
-  margin: 0; }
-  ul li {
-    display: inline-block;
-    text-transform: uppercase; }
+.image {
+  padding: 10px; }
+  .image img {
+    width: 100%; }
 
-#fh5co-header {
-  padding: 10px;
-  overflow: hidden; }
-  #fh5co-header a {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-family: "Oswald", sans-serif;
-    color: #000;
-    letter-spacing: 0.1em; }
-    #fh5co-header a:hover {
-      background: none; }
-  #fh5co-header .navbar-nav li a {
+.menu, .pull-right {
+  text-align: center; }
+  .menu .navbar-default, .pull-right .navbar-default {
+    background: #fff;
+    border: none; }
+  .menu li, .pull-right li {
     -moz-transition: 0.3s ease;
     -o-transition: 0.3s ease;
     -webkit-transition: 0.3s ease;
     -ms-transition: 0.3s ease;
     transition: 0.3s ease; }
-    #fh5co-header .navbar-nav li a::after {
-      content: "";
-      height: 3px;
-      width: 0;
-      background: #000;
-      display: block; }
-    #fh5co-header .navbar-nav li a:hover::after {
-      width: inherit; }
-  #fh5co-header .col-left, #fh5co-header .col-right {
-    padding: 15px 30px 0 40px; }
-  #fh5co-header .icon, #fh5co-header .menu-2 {
-    float: left; }
-  #fh5co-header .icon-social {
-    margin-top: 10px; }
-  #fh5co-header .icon-social, #fh5co-header .menu-1 {
-    float: right; }
-  #fh5co-header .row-header {
-    padding: 10px; }
-  #fh5co-header .icon {
-    padding: 15px 0; }
-    #fh5co-header .icon i {
-      font-size: 14px;
-      padding: 10px; }
-  #fh5co-header .col-middle .home-logo {
-    height: 70px; }
+    .menu li a, .pull-right li a {
+      text-transform: uppercase;
+      color: #232323;
+      line-height: 24px;
+      letter-spacing: 0.05em;
+      font-weight: 700; }
+      .menu li a:hover, .pull-right li a:hover {
+        background: none; }
+      .menu li a:focus, .pull-right li a:focus {
+        background: none; }
+      .menu li a::after, .pull-right li a::after {
+        content: "";
+        height: 4px;
+        width: 0;
+        background: #000;
+        display: block; }
+      .menu li a:focus::after, .pull-right li a:focus::after {
+        width: inherit; }
 
+.menu, .logo-picture {
+  float: left; }
+
+.logo-picture {
+  padding: 0 60px; }
+
+.menu, .icon-search, .icon-social {
+  padding-top: 15px; }
+
+.icon-search .fa {
+  padding: 10px 15px;
+  font-size: 14px; }
+
+.icon-social a {
+  color: #232323; }
+
+/* ul {
+	padding: 0;
+	list-style: none;
+	margin:0;
+	li {
+		display: inline-block;
+		text-transform: uppercase;
+	}
+}
+#fh5co-header {	
+	padding: 10px;
+	overflow:hidden;
+	a {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-family: $font-family-oswald;
+		color: #000;
+		letter-spacing: 0.1em;
+		&:hover {
+			background:none;
+		}
+	}
+	.navbar-nav {
+		li a{
+			@include transition(.3s);
+			&::after {
+				content: "";
+				height: 3px;
+				width: 0;
+				background: #000;
+				display: block;
+				
+			}
+			&:hover::after {
+				width: inherit;
+			}
+					
+			
+		}
+	}
+	.col-left,.col-right {
+		padding: 15px 30px 0 40px;
+	}
+	.icon,.menu-2 {
+		float: left;
+	}
+	.icon-social {
+		margin-top: 10px;
+	}
+	.icon-social,.menu-1 {
+		float: right;
+	}
+	.row-header {
+		padding: 10px;
+	}
+	.icon {
+		padding: 15px 0;
+	
+		i {
+			font-size: 14px;
+			padding: 10px
+		}
+	}		
+	.col-middle {
+		.home-logo {
+			height: 70px;
+		}
+		
+	}
+} */
 #register {
   padding: 30px 0;
   background: #eeeeee;
   overflow: hidden;
   z-index: 9; }
   #register .login, #register .text-content {
-    float: left;
-    width: 32.333333%;
-    margin-right: 15px;
     background: #e6e6e6;
     font-size: 14px;
     color: #000;
-    z-index: 99;
-    padding-right: 20px; }
-  #register .text-content + .login {
-    margin: 0; }
-  #register .form-group + .form-group {
-    margin-left: 10px; }
+    z-index: 99; }
+  #register .text-center {
+    padding: 10px; }
+    @media (min-width: 480px) and (max-width: 767px) {
+      #register .text-center .navbar-form {
+        float: none; }
+      #register .text-center .btn-danger {
+        width: 50%; }
+      #register .text-center .form-control {
+        margin: auto;
+        width: 50%; } }
+    @media (min-width: 767px) and (max-width: 991px) {
+      #register .text-center .navbar-form {
+        float: none !important; } }
+  #register:nth-last-child + .text-center {
+    margin-bottom: 10px; }
+  #register .form-group input {
+    max-width: 95%;
+    height: 30px;
+    padding: 0 5px;
+    border: none;
+    border-radius: 0; }
+  #register button {
+    padding: 5px 9px;
+    border: none;
+    border-radius: 0;
+    font-weight: 700; }
+    #register button:hover {
+      background: #fff; }
+  #register .login p {
+    padding-left: 10px;
+    font-size: 9px;
+    font-style: italic;
+    text-align: left;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    float: left; }
+  @media (min-width: 480px) and (max-width: 991px) {
+    #register .login p {
+      float: none;
+      margin-bottom: 0;
+      text-align: center !important; } }
   #register .text {
     margin-bottom: 70px; }
     #register .text h2 {
@@ -93,9 +197,6 @@ ul {
       font-size: 11px;
       line-height: 24px;
       letter-spacing: 1px; }
-  #register .two-buttons {
-    clear: both;
-    margin-bottom: 30px; }
   #register h2 {
     font-family: "Oswald", sans-serif;
     color: #000;
@@ -107,20 +208,6 @@ ul {
   #register span {
     font-size: 24px;
     text-transform: uppercase; }
-  #register .form-control {
-    height: 30px;
-    padding: 10px 0 10px 3px;
-    font-size: 14px;
-    border-radius: 0;
-    border: none;
-    box-shadow: none; }
-  #register .btn-default {
-    padding: 4px 10px;
-    font-weight: bold;
-    border-radius: 0;
-    margin-left: 5px;
-    border: none;
-    box-shadow: none; }
   #register .btn-danger {
     font-size: 14px;
     background: #fff;
@@ -141,6 +228,9 @@ ul {
       background: #4e4d4d;
       color: #fff;
       border-color: #fff; }
+    @media (max-width: 480px) {
+      #register .btn-danger {
+        width: 80%; } }
   #register .btn-danger + .btn-danger {
     font-size: 10px;
     padding: 5px 20px; }
@@ -162,43 +252,27 @@ ul {
     text-align: left;
     font-weight: 600;
     letter-spacing: 1px; }
-  @media (max-width: 1200px) {
-    #register .login, #register .text-content {
-      width: 31.3333333%;
-      margin-left: 0px;
-      padding-left: 20px; }
-      #register .login .form-group, #register .text-content .form-group {
-        margin-left: 0;
-        margin-bottom: 10px; }
-      #register .login .btn-default, #register .text-content .btn-default {
-        width: 30%; }
-    #register .btn {
-      width: 80%; } }
-  @media (max-width: 768px) {
-    #register .login, #register .text-content {
-      width: 31.333333%;
-      margin-left: 0px;
-      padding-left: 10px; }
-      #register .login .form-group, #register .text-content .form-group {
-        margin-left: 0; }
-      #register .login .btn-default, #register .text-content .btn-default {
-        width: 30%; }
-    #register .btn {
-      width: 90%; } }
-  @media (max-width: 553px) {
-    #register .login, #register .text-content {
-      width: 100%;
-      margin-bottom: 10px; } }
+
+footer {
+  background: #333333;
+  color: #babbbb;
+  text-transform: uppercase; }
+  footer .pull-left p {
+    padding: 15px; }
+  footer .pull-right a {
+    color: #babbbb; }
+  @media (max-width: 480px) {
+    footer .pull-right, footer .pull-left {
+      text-align: center;
+      width: 100%; }
+      footer .pull-right a, footer .pull-right p, footer .pull-left a, footer .pull-left p {
+        padding: 0; } }
 
 #list-avatar {
   padding: 20px 40px; }
-  #list-avatar .small-picture .responsive-picture {
-    display: none; }
-  @media (max-width: 553px) {
-    #list-avatar .small-picture .responsive-picture {
-      display: block; }
-    #list-avatar .small-picture > img {
-      display: none; } }
+  @media (min-width: 480px) and (max-width: 767px) {
+    #list-avatar .responsive-picture {
+      margin: auto; } }
   #list-avatar .navbar-nav li {
     float: none; }
     #list-avatar .navbar-nav li a {
@@ -210,7 +284,7 @@ ul {
     border: 1px solid #fff;
     border-radius: 50%;
     background: #ccc; }
-    @media (max-width: 553px) {
+    @media (max-width: 480px) {
       #list-avatar .cricle-avatar {
         margin: auto;
         margin-bottom: 20px;
